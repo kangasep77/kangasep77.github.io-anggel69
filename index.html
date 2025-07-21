@@ -1,0 +1,143 @@
+landing-page/
+├── <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">BrandKamu</div>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="hero" id="home">
+      <h1>Selamat Datang di BrandKamu</h1>
+      <p>Kami membantu mengembangkan ide dan bisnis Anda.</p>
+      <a href="#contact" class="btn">Hubungi Kami</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>BrandKamu adalah tim profesional yang berdedikasi untuk membantu Anda menciptakan solusi digital.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 BrandKamu. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+└── * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #292948;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 25px;
+  background: #ff6b6b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+section {
+  padding: 60px 10%;
+  background: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  background: #1e1e2f;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+footer {
+  background: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 20px 10%;
+}
